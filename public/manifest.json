@@ -1,0 +1,31 @@
+{
+    "name": "My Vite PWA",
+    "short_name": "VitePWA",
+    "start_url": "/",
+    "display": "standalone",
+    "background_color": "#ffffff",
+    "theme_color": "#ffffff",
+    "icons": [
+      {
+        "src": "/icon192.png",
+        "sizes": "192x192",
+        "type": "image/png"
+      },
+      {
+        "src": "/icon92.png",
+        "sizes": "92x92",
+        "type": "image/png"
+      }
+    ],
+    "share_target": {
+      "action": "/share-target",
+      "method": "POST",
+      "enctype": "multipart/form-data",
+      "params": {
+        "title": "shared-title",
+        "text": "shared-text",
+        "url": "shared-url"
+      }
+    }
+  }
+  

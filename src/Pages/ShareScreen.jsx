@@ -53,10 +53,13 @@ const ShareScreen = () => {
 
     useEffect(() => {
         if(linkParams){
-           runFetch(linkParams)
+            if(linkParams.startsWith('https://www.instagram.com/')){
+                runFetch(linkParams)
+            }else{
+                setError(prev => 'Invalid instagram link!')
+            }
         }else{
-
-            console.log(false)
+            setError(prev => 'Invalid instagram link!')
         }
     }, [])
     return (
@@ -133,9 +136,6 @@ const ShareScreen = () => {
                     </>
                 )
             }
-             {
-                 window.location.href
-             }
             {/* <button className="download-all" onClick={() => {
                 allContent.forEach(link => {
                     window.location.href = link.url

@@ -12,21 +12,20 @@ export default defineConfig({
         // Customize caching strategy here if needed
       },
       manifest: {
-        name: "My Vite PWA",
-        short_name: "VitePWA",
-        description: "A Vite PWA that handles shared links",
-        theme_color: "#ffffff",
-        background_color: "#ffffff",
-        display: "standalone",
+        name: "InstaDrop",
+        short_name: "InstaDrop",
         start_url: "/",
+        display: "standalone",
+        background_color: "#ffffff",
+        theme_color: "#ffffff",
         icons: [
           {
-            src: "icon192.png",
+            src: "/icon192.png",
             sizes: "192x192",
             type: "image/png",
           },
           {
-            src: "icon92.png",
+            src: "/icon92.png",
             sizes: "92x92",
             type: "image/png",
           },
@@ -36,9 +35,9 @@ export default defineConfig({
           method: "POST",
           enctype: "multipart/form-data",
           params: {
-            title: "shared-title",
-            text: "shared-text",
-            url: "/",
+            title: "title",
+            text: "text",
+            url: "url",
           },
         },
       },

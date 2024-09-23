@@ -10,7 +10,6 @@ function App() {
        <Routes>
               <Route exact path='/' element={ <Home /> } />
               <Route path='/share' element = { <ShareScreen /> } />
-              <Route path='/share' element = { <ShareScreen /> } />
           </Routes>
       </BrowserRouter>
     </>

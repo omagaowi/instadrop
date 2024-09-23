@@ -84,9 +84,6 @@ const ShareScreen = () => {
                                 </>
                             ):(
                                 <div className="carousel" style={ { justifyContent: allContent.length == 1? 'center' : '' } }>
-                                    {
-                                        window.location.href
-                                    }
                                         {
                                             allContent.map((post, index) => (
                                                 <div className="post">
@@ -136,6 +133,9 @@ const ShareScreen = () => {
                     </>
                 )
             }
+             {
+                 window.location.href
+             }
             {/* <button className="download-all" onClick={() => {
                 allContent.forEach(link => {
                     window.location.href = link.url

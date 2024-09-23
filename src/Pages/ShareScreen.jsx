@@ -12,10 +12,6 @@ const ShareScreen = () => {
 
     const linkParams = searchParams.get('link')
     const [allContent, setContent] = useState([])
-    const url = searchParams.get('url')
-    const title = searchParams.get('title')
-    const text = searchParams.get('text')
-
 
     const fetchContent = async (link) => {
         try {

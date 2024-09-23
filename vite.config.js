@@ -37,7 +37,7 @@ export default defineConfig({
           params: {
             title: "title",
             text: "text",
-            url: "url",
+            link: "link",
           },
         },
       },

@@ -36,7 +36,7 @@ export default defineConfig({
           enctype: "application/x-www-form-urlencoded",
           params: {
             title: "title",
-            text: "text",
+            text: "link",
             link: "link",
           },
         },

@@ -133,14 +133,6 @@ const ShareScreen = () => {
                     </>
                 )
             }
-            {
-                text
-            }{
-                title
-            }
-            {
-                url
-            }
             {/* <button className="download-all" onClick={() => {
                 allContent.forEach(link => {
                     window.location.href = link.url

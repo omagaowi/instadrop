@@ -84,6 +84,9 @@ const ShareScreen = () => {
                                 </>
                             ):(
                                 <div className="carousel" style={ { justifyContent: allContent.length == 1? 'center' : '' } }>
+                                    {
+                                        window.location.href
+                                    }
                                         {
                                             allContent.map((post, index) => (
                                                 <div className="post">

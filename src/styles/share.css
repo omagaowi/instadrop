@@ -1,0 +1,181 @@
+.share-heading{
+    width: 100vw;
+    height: 60px;
+    box-shadow: 0 2px 6px rgba(0, 0, 0, 0.15),
+    0 3px 6px rgba(0, 0, 0, 0.15);
+    background-color: #353535;
+    position: fixed;
+    top: 0px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.share-heading .input{
+    width: 90vw;
+    max-width: 550px;
+    height: 100%;
+}
+
+.share-heading .input input{
+    width: 100%;
+    height: 100%;
+    background: transparent;
+    border: none;
+    outline: none;
+    padding-left: 10px;
+    color: #d0d0d0;
+    font-size: 20px;
+}
+
+.share-heading .input input::placeholder{
+    font-size: 20px;
+}
+
+.share{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.share .carousel{
+    width: 95vw;
+    height: 350px;
+    max-width: 700px;
+    /* background: #d0d0d0; */
+    margin-top: 40px;
+    display: flex;
+    align-items: center;
+    flex-shrink: 0;
+    overflow-x: scroll;
+  scroll-snap-type: x mandatory;
+  scroll-behavior: smooth;
+  -webkit-overflow-scrolling: touch;
+}
+
+.share .carousel::-webkit-scrollbar{
+    display: none;
+}
+
+.share .post{
+    width: calc(100% / 2.2);
+    aspect-ratio: 1.3 / 1;
+    margin: 0px 10px;
+    scroll-snap-align: center;
+    flex-shrink: 0;
+    position: relative;
+    background: #353535;
+}
+
+.share .post img,
+.share .post video{
+    width: 100%;
+    height: 100%;
+    object-position: center;
+    object-fit: cover;
+}
+
+.share .post .actions{
+    width: 100%;
+    height: 100%;
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    background: rgba(0, 0, 0, .7);
+}
+
+.share .post .type{
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    width: 27px;
+    height: 27px;
+}
+
+.share .post .type svg{
+    color: #fff;
+}
+
+.share .post .actions .buttons{
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+}
+
+.share .post button{
+    width: 30px;
+    height: 30px;
+    background: transparent;
+    border: none;
+    cursor: pointer;
+    outline: none;
+}
+
+.share .post button svg{
+    width: 27px;
+    height: 26px;
+    color: #fff;
+}
+
+
+.share .download-all{
+    width: 130px;
+    height: 40px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: #353535;
+    color: #fff;
+    cursor: pointer;
+}
+
+.share .download-all svg{
+    margin-right: 5px;
+}
+
+.share .post .label{
+    width: 50px;
+    height: 30px;
+    background: rgb(0, 0, 0, .5);
+    position: absolute;
+    top: 10px;
+    right: 10px;
+    color: #fff;
+    display: flex;
+    align-items: center;
+    font-size: 14px;
+    justify-content: center;
+}
+
+.share .loader{
+    width: 170px;
+    height: 170px;
+}
+
+.share p.loading,
+.share p.error{
+    color: #fff;
+}
+
+
+.share p.error{
+    margin-top: 30px;
+}
+
+
+.share button.error-retry{
+    width: 100px;
+    height: 30px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: none;
+    outline: none;
+    background: #353535;
+    color: #fff;
+    margin-top: 20px;
+    cursor: pointer;
+}
